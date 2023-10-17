@@ -1,0 +1,26 @@
+.header__container {
+  background-color: rgb(245, 138, 7);
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 0px 40px 40px;
+}
+
+.header__title {
+  padding-left: 2rem;
+  font-size: 18vw;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  .header__container {
+    height: 64vh;
+  }
+
+  .header__title {
+    font-size: 16vw;
+    font-weight: 600;
+  }
+}

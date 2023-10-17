@@ -5,9 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(250, 187, 60);
+  font-family: "Quicksand";
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+/* $yellow: rgb(250, 187, 60);
+$orange: rgb(245, 138, 7);
+$grey: rgb(73, 106, 129);
+$light-grey: rgb(223, 223, 223); */
