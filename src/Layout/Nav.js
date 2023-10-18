@@ -14,27 +14,27 @@ function Nav() {
     <div className={classes["navbar__container"]}>
       <div className={classes["navbar__links"]}>
         <div>
-          <Link to="home" layoutId="animate-link" spy={true} smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>home</Link>
+          <Link to="home" smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>home</Link>
           {selectedLink === "home" && <motion.div layoutId="animate-link" className={classes["navbar__link-underline"]}></motion.div>}
         </div>
         <div>
-          <Link to="projects" layoutId="animate-link" spy={true} smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>projects</Link>
+          <Link to="projects" smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>projects</Link>
           {selectedLink === "projects" && <motion.div layoutId="animate-link" className={classes["navbar__link-underline"]}></motion.div>}
         </div>
         <div>
-          <Link to="about" layoutId="animate-link" spy={true} smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>about</Link>
+          <Link to="about" smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>about</Link>
           {selectedLink === "about" && <motion.div layoutId="animate-link" className={classes["navbar__link-underline"]}></motion.div>}
         </div>
         <div>
-          <Link to="certificates" layoutId="animate-link" spy={true} smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>certificates</Link>
+          <Link to="certificates" smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>certificates</Link>
           {selectedLink === "certificates" && <motion.div layoutId="animate-link" className={classes["navbar__link-underline"]}></motion.div>}
         </div>
         <div>
-          <Link to="stack" layoutId="animate-link" spy={true} smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>stack</Link>
+          <Link to="stack" smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>stack</Link>
           {selectedLink === "stack" && <motion.div layoutId="animate-link" className={classes["navbar__link-underline"]}></motion.div>}
         </div>
         <div>
-          <Link to="contact" layoutId="animate-link" spy={true} smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>contact</Link>
+          <Link to="contact" smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>contact</Link>
           {selectedLink === "contact" && <motion.div layoutId="animate-link" className={classes["navbar__link-underline"]}></motion.div>}
         </div>
       </div>

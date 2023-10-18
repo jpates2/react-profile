@@ -1,0 +1,12 @@
+.carousel__container {
+  overflow: hidden;
+}
+
+.carousel__inner-container {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel__item {
+  width: 100%;
+}
