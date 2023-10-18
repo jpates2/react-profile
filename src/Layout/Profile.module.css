@@ -1,0 +1,34 @@
+.profile__container {
+  font-family: "Bebas Neue";
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(73, 106, 129, 0.9);
+  border-radius: 8px 40px 8px 40px;
+  padding: 2rem 0 2rem 2rem;
+  max-width: 32rem;
+  min-height: 12rem;
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-right: 8vw;
+  margin-top: -8.5rem;
+}
+
+.profile__text {
+  flex-grow: 1;
+}
+
+.profile__name {
+  margin-bottom: 1rem;
+}
+
+.profile__image {
+  width: 8rem;
+  margin-top: -2rem;
+}
+
+@media (min-width: 800px) {
+  .profile__image {
+    width: 12rem;
+  }
+}
