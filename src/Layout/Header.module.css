@@ -9,7 +9,7 @@
 
 .header__title {
   padding-left: 2rem;
-  font-size: 18vw;
+  font-size: 14vw;
   font-weight: 700;
   margin: 0;
 }
@@ -20,7 +20,7 @@
   }
 
   .header__title {
-    font-size: 16vw;
+    font-size: 12vw;
     font-weight: 600;
   }
 }

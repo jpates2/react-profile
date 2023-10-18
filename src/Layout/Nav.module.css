@@ -15,6 +15,11 @@
   right: 0;
   min-width: 32rem;
   max-width: 40rem;
+  padding-right: 1rem;
   display: flex;
   justify-content: space-evenly;
+}
+
+.navbar__link:hover {
+  cursor: pointer;
 }

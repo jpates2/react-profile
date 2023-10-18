@@ -1,20 +1,20 @@
 .profile__container {
-  font-family: "Bebas Neue";
-  font-size: 2rem;
   color: white;
   background-color: rgba(73, 106, 129, 0.9);
   border-radius: 8px 40px 8px 40px;
-  padding: 2rem 0 2rem 2rem;
+  padding: 1rem 0 1rem 2rem;
   max-width: 32rem;
-  min-height: 12rem;
+  min-height: 8rem;
   display: flex;
   align-items: center;
   float: right;
   margin-right: 8vw;
-  margin-top: -8.5rem;
+  margin-top: -5rem;
 }
 
 .profile__text {
+  font-family: "Bebas Neue";
+  font-size: 1.5rem;
   flex-grow: 1;
 }
 
@@ -28,7 +28,19 @@
 }
 
 @media (min-width: 800px) {
+  .profile__container {
+    margin-top: -6rem;
+  }
+
   .profile__image {
     width: 12rem;
+  }
+
+  .profile__text {
+    font-size: 2rem;
+  }
+
+  .profile__name {
+    margin-bottom: 0.5rem;
   }
 }
