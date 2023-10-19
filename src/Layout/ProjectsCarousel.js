@@ -5,19 +5,51 @@ import classes from "./ProjectsCarousel.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import pitstopImg1 from '../images/pitstop1.png';
+import pitstopImg2 from '../images/pitstop2.png';
+
 
 const projects = [
   {
+    id: "p1",
     name: "Bros Pizza",
-    description: "Pizza restaurant landing page"
+    description: [
+      "Pizza restaurant landing page"
+    ],
+    languages: "React | HTML | CSS",
+    link: "https://resonant-rabanadas-85a557.netlify.app/",
+    github: "https://github.com/jpates2/bros-pizza",
+    images: [
+      pitstopImg1,
+    ]
   },
   {
+    id: "p2",
     name: "Ron Swanson",
-    description: "Tailwind designed site for personal trainer"
+    description: [
+      "Tailwind landing page design for personal trainer's business page.",
+      "Leverages Tailwind's flexibility and efficiency to create a visually engaging and responsive user experience."
+    ],
+    languages: "Tailwind | HTML | JavaScript",
+    link: "https://creative-dasik-19f68c.netlify.app/#",
+    github: "https://github.com/jpates2/ronswansonpt",
+    images: [
+      pitstopImg1,
+    ]
   },
   {
+    id: "p3",
     name: "Pit Stop",
-    description: "Street food vendors"
+    description: [
+      "Landing page design for ficitonal London street food market with multiple vendors. Goal is to design and build out individual landing page for each vendor.",
+      "Mobile first with responsive design to ensure page maintains appearance on larger screens."
+    ],
+    languages: "JavaScript | HTML | CSS",
+    link: "https://main--stirring-bunny-e3e887.netlify.app/",
+    github: "https://github.com/jpates2/pitstop",
+    images: [
+      pitstopImg1,
+    ]
   }
 ]
 
@@ -33,14 +65,26 @@ function ProjectsCarousel (props) {
   }
 
   return (
-    <div className={classes["carousel__container"]}>
-      <CarouselItem
-        name={projects[currentIndex].name}
-        description={projects[currentIndex].description}
-      />
-      <button onClick={handleBack} className={classes["carousel__button"]}><FontAwesomeIcon icon={faArrowLeft} /></button>
-      <button onClick={handleNext} className={classes["carousel__button"]}><FontAwesomeIcon icon={faArrowRight} /></button>
-    </div>
+    <>
+      <div className={classes["carousel__container"]}>
+        <CarouselItem
+          key={projects[currentIndex].name}
+          name={projects[currentIndex].name}
+          description={projects[currentIndex].description}
+          languages={projects[currentIndex].languages}
+          link={projects[currentIndex].link}
+          github={projects[currentIndex].github}
+          images={projects[currentIndex].images}
+        />
+      </div>
+      <button onClick={handleBack} className={`${classes["carousel__button"]} ${classes["carousel__button-left"]}`}>
+        <FontAwesomeIcon icon={faArrowLeft} />
+      </button>
+      <button onClick={handleNext} className={`${classes["carousel__button"]} ${classes["carousel__button-right"]}`}>
+        <FontAwesomeIcon icon={faArrowRight} />
+      </button>
+    </>
+
   )
 }
 

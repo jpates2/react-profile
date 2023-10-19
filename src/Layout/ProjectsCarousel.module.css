@@ -1,5 +1,6 @@
 .carousel__container {
   overflow: hidden;
+  padding: 0 2rem;
 }
 
 .carousel__inner-container {
@@ -9,4 +10,42 @@
 
 .carousel__button {
   all: unset;
+  background-color: rgba(245, 138, 7, 1);
+  color: white;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+}
+
+.carousel__button-left {
+  left: 4vw;
+  transform: translate(0, -150%);
+}
+
+.carousel__button-right {
+  right: 4vw;
+  transform: translate(0, -150%);
+}
+
+@media (min-width: 800px) {
+  .carousel__container {
+    padding: 0 4rem;
+  }
+
+  .carousel__button {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+  }
+
+  .carousel__button-left {
+    transform: translate(0, -400%);
+  }
+
+  .carousel__button-right {
+    transform: translate(0, -400%);
+  }
 }

@@ -1,8 +1,9 @@
 .projects__section {
   margin-top: 8rem;
+  margin-bottom: 4rem;
 }
 
 .projects__container {
-  background-color: rgb(245, 138, 7);
-  padding: 2rem;
+  background-color: rgba(245, 138, 7, 0.7);
+  /* padding: 2rem; */
 }
