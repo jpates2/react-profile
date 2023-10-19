@@ -1,0 +1,8 @@
+.carousel__item {
+  width: 100%;
+  color: white;
+}
+
+.carousel__item-title {
+  font-size: 2rem;
+}

@@ -4,11 +4,11 @@ import ProjectsCarousel from "./ProjectsCarousel";
 
 function Projects() {
   return (
-    <div className={classes["projects__container"]} id="projects">
+    <div className={classes["projects__section"]} id="projects">
       <h2 className={styles["section__title"]}>projects</h2>
-      <ProjectsCarousel />
-
-
+      <div className={classes["projects__container"]}>
+        <ProjectsCarousel />
+      </div>
     </div>
   )
 }

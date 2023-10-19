@@ -1,3 +1,8 @@
-.projects__container {
+.projects__section {
   margin-top: 8rem;
+}
+
+.projects__container {
+  background-color: rgb(245, 138, 7);
+  padding: 2rem;
 }

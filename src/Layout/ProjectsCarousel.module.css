@@ -7,6 +7,6 @@
   transition: transform 0.3s;
 }
 
-.carousel__item {
-  width: 100%;
+.carousel__button {
+  all: unset;
 }

@@ -2,6 +2,10 @@ import { useState } from "react";
 import CarouselItem from "./CarouselItem";
 import classes from "./ProjectsCarousel.module.css";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+
 const projects = [
   {
     name: "Bros Pizza",
@@ -34,8 +38,8 @@ function ProjectsCarousel (props) {
         name={projects[currentIndex].name}
         description={projects[currentIndex].description}
       />
-      <button onClick={handleBack}>Back</button>
-      <button onClick={handleNext}>Next</button>
+      <button onClick={handleBack} className={classes["carousel__button"]}><FontAwesomeIcon icon={faArrowLeft} /></button>
+      <button onClick={handleNext} className={classes["carousel__button"]}><FontAwesomeIcon icon={faArrowRight} /></button>
     </div>
   )
 }
