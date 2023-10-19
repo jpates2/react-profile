@@ -2,7 +2,20 @@ import { useState } from "react";
 import CarouselItem from "./CarouselItem";
 import classes from "./ProjectsCarousel.module.css";
 
-const projects = ["Bros Pizza", "Ron Swanson", "Pit Stop"]
+const projects = [
+  {
+    name: "Bros Pizza",
+    description: "Pizza restaurant landing page"
+  },
+  {
+    name: "Ron Swanson",
+    description: "Tailwind designed site for personal trainer"
+  },
+  {
+    name: "Pit Stop",
+    description: "Street food vendors"
+  }
+]
 
 function ProjectsCarousel (props) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,7 +30,10 @@ function ProjectsCarousel (props) {
 
   return (
     <div className={classes["carousel__container"]}>
-      <div>{projects[currentIndex]}</div>
+      <CarouselItem
+        name={projects[currentIndex].name}
+        description={projects[currentIndex].description}
+      />
       <button onClick={handleBack}>Back</button>
       <button onClick={handleNext}>Next</button>
     </div>
