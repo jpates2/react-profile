@@ -1,0 +1,16 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem 0;
+  max-width: 32rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 800px) {
+  .about__container {
+    padding: 0 4rem;
+    max-width: 50rem;
+  }
+}
