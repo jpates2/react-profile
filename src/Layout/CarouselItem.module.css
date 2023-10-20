@@ -41,10 +41,6 @@
   display: none;
 }
 
-.carousel__item-image {
-  height: 100%;
-}
-
 @media (min-width: 800px) {
   .carousel__item-image-container {
     display: block;

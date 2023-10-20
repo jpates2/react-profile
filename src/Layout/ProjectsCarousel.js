@@ -8,7 +8,6 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import pitstopImg1 from '../images/pitstop1.png';
 import pitstopImg2 from '../images/pitstop2.png';
 
-
 const projects = [
   {
     id: "p1",
@@ -55,12 +54,15 @@ const projects = [
 
 function ProjectsCarousel (props) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [slideDirection, setSlideDirection] = useState("left");
 
   const handleBack = () => {
+    setSlideDirection("left");
     setCurrentIndex(prevIndex => prevIndex + 1 === projects.length ? 0 : prevIndex + 1)
   }
 
   const handleNext = () => {
+    setSlideDirection("right");
     setCurrentIndex(prevIndex => prevIndex - 1 < 0 ? projects.length - 1 : prevIndex - 1)
   }
 
@@ -75,7 +77,8 @@ function ProjectsCarousel (props) {
           link={projects[currentIndex].link}
           github={projects[currentIndex].github}
           images={projects[currentIndex].images}
-        />
+          slideDirection={slideDirection}
+          />
       </div>
       <button onClick={handleBack} className={`${classes["carousel__button"]} ${classes["carousel__button-left"]}`}>
         <FontAwesomeIcon icon={faArrowLeft} />
@@ -84,7 +87,6 @@ function ProjectsCarousel (props) {
         <FontAwesomeIcon icon={faArrowRight} />
       </button>
     </>
-
   )
 }
 
