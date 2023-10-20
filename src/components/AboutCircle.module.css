@@ -21,6 +21,11 @@
   color: rgb(250, 187, 60);
 }
 
+.about__cv {
+  position: fixed;
+  height: 90%;
+}
+
 @media (min-width: 800px) {
   .about__circle {
     height: 12rem;

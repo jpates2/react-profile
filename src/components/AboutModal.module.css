@@ -1,0 +1,19 @@
+/* .about__cv {
+  max-height: 90vh;
+  max-width: 90%;
+  position: fixed;
+  z-index: 50;
+  top: 5vh;
+  left: 5%;
+} */
+
+.about__cv {
+  position: fixed;
+  height: 90%;
+  max-width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  z-index: 60;
+}

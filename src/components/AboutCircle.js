@@ -1,5 +1,4 @@
 import classes from "./AboutCircle.module.css";
-import Modal from "../Layout/Modal";
 import { useState } from "react";
 import AboutModal from "./AboutModal";
 
@@ -16,8 +15,8 @@ function AboutCircle(props) {
 
   return (
     <>
-      {activeCircle !== "" && <AboutModal onClose={closeCircleHandler} />}
-      <div onClick={openCircleHandler} circle={activeCircle} className={classes["about__circle"]}>
+      {activeCircle !== "" && <AboutModal onClose={closeCircleHandler} circle={activeCircle} />}
+      <div onClick={openCircleHandler} className={classes["about__circle"]}>
         {props.title}
       </div>
     </>
