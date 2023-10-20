@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CarouselItem from "./CarouselItem";
+import CarouselItem from "../components/CarouselItem";
 import classes from "./ProjectsCarousel.module.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

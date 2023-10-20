@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./Layout/Header";
 import Nav from "./Layout/Nav";
-import Projects from "./Layout/Projects";
-import Profile from "./Layout/Profile";
+import Projects from "./components/Projects";
+import Profile from "./components/Profile";
 
 function App() {
   return (
