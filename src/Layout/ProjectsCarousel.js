@@ -7,6 +7,8 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import pitstopImg1 from '../images/pitstop1.png';
 import pitstopImg2 from '../images/pitstop2.png';
+import pitstopImg3 from '../images/pitstop3.png';
+import pitstopImg4 from '../images/pitstop4.png';
 
 const projects = [
   {
@@ -20,6 +22,9 @@ const projects = [
     github: "https://github.com/jpates2/bros-pizza",
     images: [
       pitstopImg1,
+      pitstopImg2,
+      pitstopImg3,
+      pitstopImg4
     ]
   },
   {
@@ -34,6 +39,9 @@ const projects = [
     github: "https://github.com/jpates2/ronswansonpt",
     images: [
       pitstopImg1,
+      pitstopImg2,
+      pitstopImg3,
+      pitstopImg4
     ]
   },
   {
@@ -48,6 +56,9 @@ const projects = [
     github: "https://github.com/jpates2/pitstop",
     images: [
       pitstopImg1,
+      pitstopImg2,
+      pitstopImg3,
+      pitstopImg4
     ]
   }
 ]

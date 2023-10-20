@@ -39,6 +39,7 @@
 
 .carousel__item-image-container {
   display: none;
+  width: 14rem;
 }
 
 @media (min-width: 800px) {
