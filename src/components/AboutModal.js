@@ -12,7 +12,7 @@ function AboutModal(props) {
 
   if (index < 5) {
     modalContent = AboutInfo[index].text.map((text, i) => (
-      <div key={`text ${i}`}>{text}</div>
+      <div key={`text ${i}`} className={classes["about__modal-text"]}>{text}</div>
     ))
   }
 
@@ -29,7 +29,7 @@ function AboutModal(props) {
 
   return (
     <Modal onClose={props.onClose}>
-      {index < 5 && <h3>{props.circle}</h3>}
+      {index < 5 && <h3 className={classes["about__modal-title"]}>{props.circle}</h3>}
       {modalContent}
     </Modal>
   )
