@@ -3,7 +3,7 @@
   margin: 0 auto 4rem auto;
   max-width: 32rem;
   border-radius: 32px;
-  padding: 3rem 6rem;
+  padding: 3rem 3rem;
   box-sizing: border-box;
   text-align: center;
 }
@@ -33,4 +33,10 @@
 
 .contact__icon {
   margin-right: 1rem;
+}
+
+@media (min-width: 800px) {
+  .contact__container {
+    padding: 3rem 6rem;
+  }
 }

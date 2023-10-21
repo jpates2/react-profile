@@ -1,5 +1,7 @@
-import classes from "./AboutCircle.module.css";
 import { useState } from "react";
+import { motion } from "framer-motion";
+
+import classes from "./AboutCircle.module.css";
 import AboutModal from "./AboutModal";
 
 function AboutCircle(props) {
@@ -16,9 +18,9 @@ function AboutCircle(props) {
   return (
     <>
       {activeCircle !== "" && <AboutModal onClose={closeCircleHandler} circle={activeCircle} />}
-      <div onClick={openCircleHandler} className={classes["about__circle"]}>
+      <motion.div whileHover={{ scale: 0.9 }} transition={{duration: 0.5, type: "spring"}} onClick={openCircleHandler} className={classes["about__circle"]}>
         {props.title}
-      </div>
+      </motion.div>
     </>
   )
 }

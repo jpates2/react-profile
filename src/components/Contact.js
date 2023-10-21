@@ -26,7 +26,7 @@ function Contact() {
                 initial={{opacity: 0, height: 0}}
                 animate={{
                   opacity: 1,
-                  height: "100px",
+                  height: "auto",
                   transition: {type: "spring", bounce: 0.3, duration: 1}
                 }}
                 exit={{opacity: 0, height: 0}}
