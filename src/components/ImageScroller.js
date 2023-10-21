@@ -13,13 +13,13 @@ function ImageScroller(props) {
   }, [props.images.length])
 
 
-  return (
-    <>
-      {props.images.map(meal => (
-        <img key={meal} src={meal} alt="" className={classes["carousel__item-image"]} />
-      ))}
-    </>
-  )
+  // return (
+  //   <>
+  //     {props.images.map(meal => (
+  //       <img key={meal} src={meal} alt="" className={classes["carousel__item-image"]} />
+  //     ))}
+  //   </>
+  // )
 }
 
 export default ImageScroller;

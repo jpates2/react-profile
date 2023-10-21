@@ -4,6 +4,7 @@ import Nav from "./Layout/Nav";
 import Projects from "./components/Projects";
 import Profile from "./components/Profile";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Profile />
       <Projects />
       <About />
+      <Contact />
     </React.Fragment>
   );
 }
