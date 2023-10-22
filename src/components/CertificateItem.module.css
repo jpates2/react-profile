@@ -1,9 +1,17 @@
 .cert-item {
+  max-width: 80vw;
+  border-bottom: solid;
+  margin-bottom: 1rem;
+}
+
+.cert-item__header {
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  border-bottom: solid;
+  font-size: 1rem;
+}
+
+.cert-item__header:hover {
+  cursor: pointer;
 }
 
 .cert-item__name {
@@ -12,4 +20,14 @@
 
 .cert-item__arrow {
   margin-top: -5px;
+}
+
+.cert-item__details {
+  margin-top: 0;
+}
+
+@media (min-width: 800px) {
+  .cert-item__header {
+    font-size: 1.5rem;
+  }
 }
