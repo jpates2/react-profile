@@ -6,6 +6,7 @@ import Profile from "./components/Profile";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Stack from "./components/Stack";
+import Certificates from "./components/Certificates";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Projects />
       <About />
       <Stack />
+      <Certificates />
       <Contact />
     </React.Fragment>
   );
