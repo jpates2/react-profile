@@ -30,7 +30,7 @@ function Stack() {
   ))
 
   return (
-    <div>
+    <div id="stack">
       <h2 className={styles["section__title"]}>stack</h2>
       <div className={classes["stack__container"]}>
         {stackContent}

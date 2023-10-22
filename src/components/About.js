@@ -10,7 +10,7 @@ function About() {
   ))
 
   return (
-    <div>
+    <div id="about">
       <h2 className={styles["section__title"]}>about</h2>
       <div className={classes["about__container"]}>
         {aboutContent}

@@ -16,7 +16,7 @@ function Contact() {
   }
 
   return (
-    <div>
+    <div id="contact">
       <h2 className={styles["section__title"]}>contact</h2>
       <motion.div className={classes["contact__container"]}>
           <div onClick={expandHandler} className={classes["contact__header"]}>let's talk</div>

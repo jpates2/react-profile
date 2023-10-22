@@ -33,7 +33,7 @@ function Certificates() {
   ))
 
   return (
-    <div>
+    <div id="certificates">
       <h2 className={styles["section__title"]}>certificates</h2>
     <div className={classes["certificates__container"]}>
         {certsContent}
