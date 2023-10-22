@@ -1,17 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import classes from "./Nav.module.css";
 
 function Nav() {
   const [selectedLink, setSelectedLink] = useState("home");
+  const { scrollY } = useScroll();
+  const backgroundNav = useTransform(scrollY, [0, 700], ["rgb(245, 138, 7)", "rgb(250, 187, 60)"]);
 
   function clickLinkHandler(event) {
     setSelectedLink(event.target.innerText);
   }
 
   return (
-    <div className={classes["navbar__container"]}>
+    <motion.div className={classes["navbar__container"]} style={{background: backgroundNav}} transition={{duration: 0.5}}>
       <div className={classes["navbar__links"]}>
         <div>
           <Link to="home" smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>home</Link>
@@ -38,7 +40,7 @@ function Nav() {
           {selectedLink === "contact" && <motion.div layoutId="animate-link" className={classes["navbar__link-underline"]}></motion.div>}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

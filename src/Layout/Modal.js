@@ -22,7 +22,7 @@ const ModalOverlay = (props) => {
     <AnimatePresence>
       <motion.div
         initial={{ opacity: 0}}
-        animate={{ opacity: 1, transition: {duration: 0.3} }}
+        animate={{ opacity: 1, transition: {duration: 0.5} }}
         exit={{ opacity: 0}}
         key="modal"
         className={classes["modal"]}

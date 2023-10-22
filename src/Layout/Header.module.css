@@ -14,7 +14,7 @@
   margin: 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .header__container {
     height: 64vh;
   }

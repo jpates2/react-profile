@@ -24,7 +24,11 @@
   justify-content: space-evenly;
   align-items: flex-start;
   font-size: 1.2rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact__detail {
+  margin-bottom: 1rem;
 }
 
 .contact__detail:hover {

@@ -27,7 +27,12 @@ function Contact() {
                 animate={{
                   opacity: 1,
                   height: "auto",
-                  transition: {type: "spring", bounce: 0.3, duration: 1}
+                  transition: {
+                    type: "spring",
+                    bounce: 0.3,
+                    duration: 1,
+                    opacity: { duration: 0.5 }
+                  }
                 }}
                 exit={{opacity: 0, height: 0}}
                 className={classes["contact__details"]}
