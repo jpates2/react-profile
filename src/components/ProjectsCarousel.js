@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { wrap } from "popmotion";
+import { AnimatePresence, motion } from "framer-motion";
 import CarouselItem from "../components/CarouselItem";
 import classes from "./ProjectsCarousel.module.css";
 
@@ -22,9 +24,6 @@ const projects = [
     github: "https://github.com/jpates2/bros-pizza",
     images: [
       pitstopImg1,
-      pitstopImg2,
-      pitstopImg3,
-      pitstopImg4
     ]
   },
   {
@@ -39,9 +38,6 @@ const projects = [
     github: "https://github.com/jpates2/ronswansonpt",
     images: [
       pitstopImg1,
-      pitstopImg2,
-      pitstopImg3,
-      pitstopImg4
     ]
   },
   {
@@ -56,48 +52,42 @@ const projects = [
     github: "https://github.com/jpates2/pitstop",
     images: [
       pitstopImg1,
-      pitstopImg2,
-      pitstopImg3,
-      pitstopImg4
     ]
   }
 ]
 
 function ProjectsCarousel (props) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [slideDirection, setSlideDirection] = useState("left");
-
-  const handleBack = () => {
-    setSlideDirection("left");
-    setCurrentIndex(prevIndex => prevIndex + 1 === projects.length ? 0 : prevIndex + 1)
-  }
-
-  const handleNext = () => {
-    setSlideDirection("right");
-    setCurrentIndex(prevIndex => prevIndex - 1 < 0 ? projects.length - 1 : prevIndex - 1)
+  const [[currentPage, slideDirection], setPage] = useState([0, 0]);
+  const pageIndex = wrap(0, projects.length, currentPage);
+  // console.log(currentPage, slideDirection, pageIndex);
+  const slider = (newDirection) => {
+    setPage([currentPage + newDirection, newDirection])
   }
 
   return (
     <>
       <div className={classes["carousel__container"]}>
-        <CarouselItem
-          key={projects[currentIndex].name}
-          name={projects[currentIndex].name}
-          description={projects[currentIndex].description}
-          languages={projects[currentIndex].languages}
-          link={projects[currentIndex].link}
-          github={projects[currentIndex].github}
-          images={projects[currentIndex].images}
-          slideDirection={slideDirection}
-          />
-      </div>
-      <button onClick={handleBack} className={`${classes["carousel__button"]} ${classes["carousel__button-left"]}`}>
-        <FontAwesomeIcon icon={faArrowLeft} />
-      </button>
-      <button onClick={handleNext} className={`${classes["carousel__button"]} ${classes["carousel__button-right"]}`}>
-        <FontAwesomeIcon icon={faArrowRight} />
-      </button>
-    </>
+        <AnimatePresence initial={false} custom={slideDirection}>
+          <CarouselItem
+            key={projects[pageIndex].id}
+            custom={slideDirection}
+            name={projects[pageIndex].name}
+            description={projects[pageIndex].description}
+            languages={projects[pageIndex].languages}
+            link={projects[pageIndex].link}
+            github={projects[pageIndex].github}
+            images={projects[pageIndex].images}
+            slideDirection={slideDirection}
+            />
+        </AnimatePresence>
+        </div>
+        <button onClick={() => slider(-1)} className={`${classes["carousel__button"]} ${classes["carousel__button-left"]}`}>
+          <FontAwesomeIcon icon={faArrowLeft} />
+        </button>
+        <button onClick={() => slider(1)} className={`${classes["carousel__button"]} ${classes["carousel__button-right"]}`}>
+          <FontAwesomeIcon icon={faArrowRight} />
+        </button>
+      </>
   )
 }
 
@@ -105,11 +95,40 @@ export default ProjectsCarousel;
 
 
 
+// function ProjectsCarousel (props) {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+//   const [slideDirection, setSlideDirection] = useState("left");
 
+//   const handleBack = () => {
+//     setSlideDirection("left");
+//     setCurrentIndex(prevIndex => prevIndex + 1 === projects.length ? 0 : prevIndex + 1)
+//   }
 
+//   const handleNext = () => {
+//     setSlideDirection("right");
+//     setCurrentIndex(prevIndex => prevIndex - 1 < 0 ? projects.length - 1 : prevIndex - 1)
+//   }
 
-// const brosPizza = <CarouselItem name="Bros Pizza" description="Landing page and order page for pizza restaurant" className={classes["carousel__item"]} />
-
-// const pitStop = <CarouselItem name="Pit Stop" description="Food vendor site" className={classes["carousel__item"]} />
-
-// const ronSwanson = <CarouselItem name="Ron Swanson PT" description="Landing page for personal trainer" className={classes["carousel__item"]} />
+//   return (
+//     <>
+//       <div className={classes["carousel__container"]}>
+//         <CarouselItem
+//           key={projects[currentIndex].name}
+//           name={projects[currentIndex].name}
+//           description={projects[currentIndex].description}
+//           languages={projects[currentIndex].languages}
+//           link={projects[currentIndex].link}
+//           github={projects[currentIndex].github}
+//           images={projects[currentIndex].images}
+//           slideDirection={slideDirection}
+//           />
+//       </div>
+//       <button onClick={handleBack} className={`${classes["carousel__button"]} ${classes["carousel__button-left"]}`}>
+//         <FontAwesomeIcon icon={faArrowLeft} />
+//       </button>
+//       <button onClick={handleNext} className={`${classes["carousel__button"]} ${classes["carousel__button-right"]}`}>
+//         <FontAwesomeIcon icon={faArrowRight} />
+//       </button>
+//     </>
+//   )
+// }

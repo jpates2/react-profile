@@ -1,0 +1,42 @@
+.stack-item {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(245, 138, 7);
+  border-radius: 16px;
+  height: 8rem;
+  width: 8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.stack-item__image {
+  max-width: 4rem;
+}
+
+@media (max-width: 800px) {
+  .stack-item:nth-child(2),
+  .stack-item:nth-child(3),
+  .stack-item:nth-child(6),
+  .stack-item:nth-child(7) {
+    background-color: rgb(73, 106, 129);
+    color: rgb(223, 223, 223);
+  }
+}
+
+@media (min-width: 800px) {
+  .stack-item {
+    background-color: rgb(245, 138, 7);
+  }
+
+  .stack-item:nth-child(2n) {
+    background-color: rgb(73, 106, 129);
+    color: rgb(223, 223, 223);
+  }
+
+  #stack__javascript {
+    scale: 2;
+  }
+}
