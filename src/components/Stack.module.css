@@ -1,0 +1,17 @@
+.stack__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .stack__container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem 1rem;
+    max-width: 30rem;
+  }
+}

@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Profile from "./components/Profile";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Stack from "./components/Stack";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Profile />
       <Projects />
       <About />
+      <Stack />
       <Contact />
     </React.Fragment>
   );
