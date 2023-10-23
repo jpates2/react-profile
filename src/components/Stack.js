@@ -15,12 +15,12 @@ import StackSquare from "./StackSquare";
 const stack = [
   { name: "javascript", img: javascriptIcon },
   { name: "react", img: reactIcon },
-  { name: "css", img: cssIcon },
   { name: "ruby", img: rubyIcon },
+  { name: "css", img: cssIcon },
   { name: "html", img: htmlIcon },
   { name: "tailwind", img: tailwindIcon },
-  { name: "sql", img: sqlIcon },
   { name: "bootstrap", img: bootstrapIcon },
+  { name: "sql", img: sqlIcon },
   { name: "github", img: githubIcon },
 ]
 

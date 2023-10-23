@@ -1,6 +1,6 @@
 .certificates__container {
   max-width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 4rem auto;
 }
 
 @media (min-width: 800px) {
