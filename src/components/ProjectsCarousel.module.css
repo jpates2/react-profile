@@ -20,6 +20,12 @@
   position: absolute;
 }
 
+.carousel__button:hover {
+  cursor: pointer;
+  color: rgba(250, 187, 60, 1);
+  transition: color 0.5s;
+}
+
 .carousel__button-left {
   left: 4vw;
   transform: translate(0, -150%);

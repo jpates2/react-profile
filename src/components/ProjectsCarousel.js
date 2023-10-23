@@ -81,7 +81,9 @@ function ProjectsCarousel (props) {
             />
         </AnimatePresence>
         </div>
-        <button onClick={() => slider(-1)} className={`${classes["carousel__button"]} ${classes["carousel__button-left"]}`}>
+        <button
+          onClick={() => slider(-1)}
+          className={`${classes["carousel__button"]} ${classes["carousel__button-left"]}`}>
           <FontAwesomeIcon icon={faArrowLeft} />
         </button>
         <button onClick={() => slider(1)} className={`${classes["carousel__button"]} ${classes["carousel__button-right"]}`}>

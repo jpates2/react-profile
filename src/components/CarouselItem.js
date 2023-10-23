@@ -23,13 +23,8 @@ function CarouselItem(props) {
       zIndex: 0,
       x: direction < 0 ? "100%" : "-100%",
       opacity: 0,
-      transition: {
-        x: { type: "spring", stiffness: 300, damping: 30, duration: 1 },
-        opacity: { duration: 1 }
-      }
     }
   };
-
 
   return (
     <AnimatePresence>
@@ -39,7 +34,7 @@ function CarouselItem(props) {
         animate="center"
         exit="exit"
         transition={{
-          x: { type: "spring", stiffness: 300, damping: 30, duration: 1 },
+          x: { type: "spring", duration: 0.5 },
           opacity: { duration: 1 }
         }}
         className={classes["carousel__item"]}
