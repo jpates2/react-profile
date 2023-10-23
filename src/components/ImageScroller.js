@@ -1,25 +1,48 @@
-// import { useState, useEffect } from "react";
-// import classes from "./ImageScroller.module.css";
+import { useState, useEffect } from "react";
+import classes from "./ImageScroller.module.css";
+import { motion, AnimatePresence } from "framer-motion";
 
-// function ImageScroller(props) {
-//   const [imageIndex, setImageIndex] = useState(0);
-
-//   useEffect(() => {
-
-//     const imageHandler = setTimeout(() => {
-//       setImageIndex(prevIndex => prevIndex + 1 === props.images.length ? 0 : prevIndex + 1)
-//     }, 1000);
-
-//   }, [props.images.length])
+function ImageScroller(props) {
+  const [imageIndex, setImageIndex] = useState(0);
 
 
-//   // return (
-//   //   <>
-//   //     {props.images.map(meal => (
-//   //       <img key={meal} src={meal} alt="" className={classes["carousel__item-image"]} />
-//   //     ))}
-//   //   </>
-//   // )
-// }
+  useEffect(() => {
+    const updateIndex = (newIndex) => {
+      if (newIndex >= props.images.length || newIndex < 0) {
+        newIndex = 0;
+      }
+      setImageIndex(newIndex);
+    };
 
-// export default ImageScroller;
+    const interval = setInterval(() => {
+      updateIndex(imageIndex + 1);
+    }, 3000);
+
+    return () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
+  }, [imageIndex, props.images.length]);
+
+  return (
+    <AnimatePresence>
+      <motion.div className={classes["carousel__item-image-inner"]} >
+        {props.images.map(img => (
+          <motion.img
+            key={img}
+            src={img}
+            alt=""
+            className={classes["carousel__item-image"]}
+            // style={{ transform: `translateY(-${imageIndex * 100}%)` }}
+            initial={{ y: 0 }}
+            animate={{y: `-${imageIndex * 100}%`}}
+            exit={{y: "100%"}}
+          />
+        ))}
+      </motion.div>
+    </AnimatePresence>
+  )
+}
+
+export default ImageScroller;

@@ -37,13 +37,7 @@
   margin: 1rem auto 0 auto;
 }
 
-.carousel__item-image {
-  width: 14rem;
-  height: 100%;
-}
-
 .carousel__item-image-container {
-  display: none;
   width: 14rem;
 }
 

@@ -7,10 +7,18 @@ import classes from "./ProjectsCarousel.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import pitstopImg1 from '../images/pitstop1.png';
-import pitstopImg2 from '../images/pitstop2.png';
-import pitstopImg3 from '../images/pitstop3.png';
-import pitstopImg4 from '../images/pitstop4.png';
+import pitstop1 from '../images/pitstop1.png';
+import pitstop2 from '../images/pitstop2.png';
+import pitstop3 from '../images/pitstop3.png';
+import pitstop4 from '../images/pitstop4.png';
+import bros1 from '../images/bros1.png';
+import bros2 from '../images/bros2.png';
+import bros3 from '../images/bros3.png';
+import bros4 from '../images/bros4.png';
+import ronswanson1 from '../images/ronswanson1.png';
+import ronswanson2 from '../images/ronswanson2.png';
+import ronswanson3 from '../images/ronswanson3.png';
+import ronswanson4 from '../images/ronswanson4.png';
 
 const projects = [
   {
@@ -23,7 +31,10 @@ const projects = [
     link: "https://resonant-rabanadas-85a557.netlify.app/",
     github: "https://github.com/jpates2/bros-pizza",
     images: [
-      pitstopImg1,
+      bros1,
+      bros2,
+      bros3,
+      bros4,
     ]
   },
   {
@@ -37,7 +48,10 @@ const projects = [
     link: "https://creative-dasik-19f68c.netlify.app/#",
     github: "https://github.com/jpates2/ronswansonpt",
     images: [
-      pitstopImg1,
+      ronswanson1,
+      ronswanson2,
+      ronswanson3,
+      ronswanson4,
     ]
   },
   {
@@ -51,7 +65,10 @@ const projects = [
     link: "https://main--stirring-bunny-e3e887.netlify.app/",
     github: "https://github.com/jpates2/pitstop",
     images: [
-      pitstopImg1,
+      pitstop1,
+      pitstop2,
+      pitstop3,
+      pitstop4,
     ]
   }
 ]

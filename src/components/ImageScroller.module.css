@@ -1,4 +1,8 @@
 .carousel__item-image {
   height: 100%;
-  width: 14rem;
+  max-width: 14rem;
 }
+
+/* .carousel__item-image-inner {
+  white-space: nowrap;
+} */
