@@ -28,12 +28,12 @@ function Nav() {
           {selectedLink === "about" && <motion.div layoutId="animate-link" className={classes["navbar__link-underline"]}></motion.div>}
         </div>
         <div>
-          <Link to="certificates" smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>certificates</Link>
-          {selectedLink === "certificates" && <motion.div layoutId="animate-link" className={classes["navbar__link-underline"]}></motion.div>}
-        </div>
-        <div>
           <Link to="stack" smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>stack</Link>
           {selectedLink === "stack" && <motion.div layoutId="animate-link" className={classes["navbar__link-underline"]}></motion.div>}
+        </div>
+        <div>
+          <Link to="certificates" smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>certificates</Link>
+          {selectedLink === "certificates" && <motion.div layoutId="animate-link" className={classes["navbar__link-underline"]}></motion.div>}
         </div>
         <div>
           <Link to="contact" smooth={true} offset={-100} duration={800} onClick={clickLinkHandler} className={classes["navbar__link"]}>contact</Link>
