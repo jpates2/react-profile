@@ -5,6 +5,7 @@ import classes from "./Nav.module.css";
 
 function Nav() {
   const [selectedLink, setSelectedLink] = useState("home");
+
   const { scrollY } = useScroll();
   const backgroundNav = useTransform(scrollY, [0, 700], ["rgb(245, 138, 7)", "rgb(250, 187, 60)"]);
 
@@ -12,7 +13,17 @@ function Nav() {
     setSelectedLink(event.target.innerText);
   }
 
-  return (
+  const mobileNav = (
+    <motion.div className={classes["mobile-navbar__container"]}>
+      <div className={classes["hamburger"]}>
+        <span className={classes["hamburger-top"]}></span>
+        <span className={classes["hamburger-middle"]}></span>
+        <span className={classes["hamburger-bottom"]}></span>
+      </div>
+    </motion.div>
+  )
+
+  const nav = (
     <motion.div className={classes["navbar__container"]} style={{background: backgroundNav}} transition={{duration: 0.5}}>
       <div className={classes["navbar__links"]}>
         <div>
@@ -41,6 +52,13 @@ function Nav() {
         </div>
       </div>
     </motion.div>
+  )
+
+  return (
+    <>
+      {nav}
+      {mobileNav}
+    </>
   )
 }
 
