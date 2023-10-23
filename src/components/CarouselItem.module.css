@@ -38,11 +38,12 @@
 }
 
 .carousel__item-image-container {
-  width: 14rem;
+  display: none;
 }
 
 @media (min-width: 800px) {
   .carousel__item-image-container {
+    width: 14rem;
     display: block;
   }
 

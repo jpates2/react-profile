@@ -34,7 +34,6 @@ function ImageScroller(props) {
             src={img}
             alt=""
             className={classes["carousel__item-image"]}
-            // style={{ transform: `translateY(-${imageIndex * 100}%)` }}
             initial={{ y: 0 }}
             animate={{y: `-${imageIndex * 100}%`}}
             exit={{y: "100%"}}
