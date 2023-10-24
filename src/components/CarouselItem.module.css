@@ -1,7 +1,7 @@
 .carousel__item {
   width: 100%;
   color: white;
-  height: 28rem;
+  height: 30rem;
   display: flex;
 }
 
@@ -10,7 +10,7 @@
   max-width: 48rem;
   display: flex;
   justify-content: space-between;
-  height: 28rem;
+  height: 30rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -37,14 +37,16 @@
   margin: 1rem auto 0 auto;
 }
 
-.carousel__item-image-container {
-  display: none;
+@media (max-width: 800px) {
+  .carousel__item-image-container {
+    display: none;
+  }
 }
 
 @media (min-width: 800px) {
   .carousel__item-image-container {
     width: 14rem;
-    display: block;
+    /* display: block; */
   }
 
   .carousel__item-inner {

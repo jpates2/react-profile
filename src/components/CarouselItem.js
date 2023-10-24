@@ -68,27 +68,3 @@ function CarouselItem(props) {
 }
 
 export default CarouselItem;
-
-// const slideVariants = {
-//   hiddenRight: {
-//     x: "100%",
-//     opacity: 1,
-//   },
-//   hiddenLeft: {
-//     x: "-100%",
-//     opacity: 1,
-//   },
-//   visible: {
-//     x: "0",
-//     opacity: 1,
-//     transition: {
-//       duration: 1,
-//     },
-//   },
-//   exit: {
-//     opacity: 1,
-//     transition: {
-//       duration: 1,
-//     },
-//   },
-// };
