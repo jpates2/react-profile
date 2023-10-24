@@ -32,17 +32,6 @@
   box-sizing: border-box;
 }
 
-.mobile-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .mobile-navbar__links {
   display: flex;
   flex-direction: column;

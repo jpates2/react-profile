@@ -9,6 +9,10 @@ import Stack from "./components/Stack";
 import Certificates from "./components/Certificates";
 
 function App() {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <React.Fragment>
       <Nav />

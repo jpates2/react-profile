@@ -138,7 +138,7 @@ function Nav() {
           <span className={classes["hamburger-bottom"]}></span>
         </motion.div>
       </div>
-      <motion.div variants={mobileMenuVariant} className="mobile-menu">
+      <motion.div variants={mobileMenuVariant} className="mobile-navbar">
         <motion.div
           variants={closeIconVariant}
           onClick={() => setMobileNavOpen(false)}
