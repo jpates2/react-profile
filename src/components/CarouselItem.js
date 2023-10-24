@@ -59,7 +59,7 @@ function CarouselItem(props) {
             </div>
           </div>
           <div className={classes["carousel__item-image-container"]}>
-            <ImageScroller images={props.images} />
+            <ImageScroller images={props.images} name={props.name} />
           </div>
         </div>
       </motion.div>

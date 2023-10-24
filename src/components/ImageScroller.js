@@ -26,17 +26,27 @@ function ImageScroller(props) {
   }, [imageIndex, props.images.length]);
 
   const images = (
-    props.images.map(img => (
-      <motion.img
-        key={img}
-        src={img}
-        alt=""
-        className={classes["carousel__item-image"]}
-        initial={{ y: 0 }}
-        animate={{y: `-${imageIndex * 100}%`}}
-        exit={{y: "100%"}}
-      />
-    ))
+    props.images.map(function(img) {
+      if (props.name !== "Watchlist" && props.name !== "GameOn" && props.name !== "ShArt") {
+        return <motion.img
+          key={img}
+          src={img}
+          alt=""
+          className={classes["carousel__item-image"]}
+          initial={{ y: 0 }}
+          animate={{y: `-${imageIndex * 100}%`}}
+          transition={{ type: "spring", bounce: 0.2 }}
+          exit={{y: "100%"}}
+        />
+      } else {
+        return <motion.img
+          key={img}
+          src={img}
+          alt=""
+          className={classes["carousel__item-image"]}
+        />
+      }
+    })
   )
 
   return (
