@@ -6,7 +6,7 @@ import profileImg from '../images/bitmoji1.png';
 
 function Profile() {
   return (
-    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 5}} exit={{opacity: 1}} className={classes["profile__container"]}>
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 1.5, duration: 3}} exit={{opacity: 1}} className={classes["profile__container"]}>
       <div className={classes["profile__text"]}>
         <div className={classes["profile__name"]}>JESS PATES</div>
         <div>FULLSTACK DEVELOPER</div>
