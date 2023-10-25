@@ -27,7 +27,8 @@ export const AboutInfo = [
     title: "learning",
     text: [
       "It goes without saying that there's an enormous amount to learn. And there always will be.",
-      "ince the Bootcamp my focus has been on expanding my JavaScript knowledge, both through following online tutorials and learning on-the-go with projects such as this. I've also spent some time learning TypeScript."
+      "Since the Bootcamp my focus has been on expanding my JavaScript knowledge, both through following online tutorials and learning on-the-go with projects such as this.",
+      "More recently I've moved onto React and have completed my first project. Next up is a more complex project: creating a site to practice conjugating Spanish verbs."
     ]
   },
   {
