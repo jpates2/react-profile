@@ -9,9 +9,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
+
 function ProjectsCarousel (props) {
   const [[currentPage, slideDirection], setPage] = useState([0, 0]);
   const pageIndex = wrap(0, ProjectsInfo.length, currentPage);
+
+  const buttonVariants = {
+    hidden: {
+      opacity: 0,
+      x: 0,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.3 },
+    },
+  };
 
   const slider = (newDirection) => {
     setPage([currentPage + newDirection, newDirection])
@@ -31,18 +44,24 @@ function ProjectsCarousel (props) {
             github={ProjectsInfo[pageIndex].github}
             images={ProjectsInfo[pageIndex].images}
             slideDirection={slideDirection}
-            />
+          />
         </AnimatePresence>
         </motion.div>
+      <div className={classes["carousel__button-container"]}>
         <button
           onClick={() => slider(-1)}
-          className={`${classes["carousel__button"]} ${classes["carousel__button-left"]}`}>
+          className={`${classes["carousel__button"]} ${classes["carousel__button-left"]}`}
+        >
           <FontAwesomeIcon icon={faArrowLeft} />
         </button>
-        <button onClick={() => slider(1)} className={`${classes["carousel__button"]} ${classes["carousel__button-right"]}`}>
+        <button
+          onClick={() => slider(1)}
+          className={`${classes["carousel__button"]} ${classes["carousel__button-right"]}`}
+        >
           <FontAwesomeIcon icon={faArrowRight} />
         </button>
-      </>
+      </div>
+    </>
   )
 }
 

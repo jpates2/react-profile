@@ -46,7 +46,8 @@ export const ProjectsInfo = [
     id: "p1",
     name: "Bros Pizza",
     description: [
-      "Pizza restaurant landing page"
+      "My first React project: a landing and ordering page for a pizza restaurant.",
+      "Includes many of React's core features: state, props, context, hooks, side effects, routing, portals. Also includes connection to backend Database via HTTP fetch requests."
     ],
     languages: "React | HTML | CSS",
     link: "https://resonant-rabanadas-85a557.netlify.app/",
@@ -104,12 +105,12 @@ export const ProjectsInfo = [
     id: "p4",
     name: "GameOn",
     description: [
-      "",
-      ""
+      "Arcade style site with a variety of JavaScript powered games.",
+      "Focuses on JS essentials such as functions, variables, selectors, array methods, basic operators, logical operators, setting CSS styles, conditionals, loops and timers."
     ],
-    languages: "JavaScript | HTML | CSS",
-    link: "",
-    github: "",
+    languages: "JavaScript | Ruby on Rails | HTML | CSS",
+    link: "https://gameon-ur5o.onrender.com/",
+    github: "https://github.com/jpates2/gameon/",
     images: [
       gameon1,
       gameon2,
@@ -120,12 +121,13 @@ export const ProjectsInfo = [
     id: "p5",
     name: "FanFind",
     description: [
-      "",
-      ""
+      "Mobile first web app that helps sports fans find the right people and the right place to watch the games of their team.",
+      "Features include AJAX searching, filtering, chatroom, mapbox.",
+      "Group project completed as part of Le Wagon bootcamp."
     ],
-    languages: "JavaScript | HTML | CSS",
-    link: "",
-    github: "",
+    languages: "Ruby on Rails | JavaScript | Stimulus | HTML | CSS | SQL",
+    link: "https://www.fan-find.com/",
+    github: "https://github.com/WillMolas/FanFind/",
     images: [
       fanfind1,
       fanfind2,
@@ -138,12 +140,12 @@ export const ProjectsInfo = [
     id: "p6",
     name: "ShArt",
     description: [
-      "",
-      ""
+      "Marketplace bringing together those with artwork to rent and those looking to rent artwork for events, occasions, public spaces. Rails MVC structure with create / view / edit / delete functions.",
+      "Group project at Le Wagon bootcamp."
     ],
-    languages: "",
-    link: "",
-    github: "",
+    languages: "Ruby on Rails | JavaScript | Stimulus | HTML | CSS | SQL",
+    link: "https://shart-jpates2.herokuapp.com/",
+    github: "https://github.com/WillMolas/shART/",
     images: [
       shart1,
       shart2,
@@ -154,12 +156,13 @@ export const ProjectsInfo = [
     id: "p7",
     name: "Watchlist",
     description: [
-      "",
-      ""
+      "Site for organising movies into lists based on genre. Users can browse lists, create a new list and add a movie to any list.",
+      "Rails MVC structure with create / view / edit / delete functions.",
+      "Individual project at Le Wagon."
     ],
-    languages: "",
-    link: "",
-    github: "",
+    languages: "Ruby on Rails | HTML | CSS ",
+    link: "https://watchlist-bcn1046.herokuapp.com/",
+    github: "https://github.com/jpates2/rails-watch-list",
     images: [
       watchlist1,
       watchlist2,
