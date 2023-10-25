@@ -2,18 +2,20 @@ import { useState } from "react";
 import styles from "../styles/shared.module.css";
 import classes from "./Certificates.module.css"
 import CertificateItem from "./CertificateItem";
-
-const certificates = [
-  { id: "c1", name: "web development bootcamp" },
-  { id: "c2", name: "the complete javascript course" },
-  { id: "c3", name: "mastering typescript" },
-  { id: "c4", name: "css - the complete guide" },
-  { id: "c5", name: "tailwind from scratch" },
-  { id: "c6", name: "react - the complete guide" },
-]
+import { CertificatesInfo } from "../info/certs-info";
 
 function Certificates() {
   const [expanded, setExpanded] = useState(null)
+  const [activeCert, setActiveCert] = useState("");
+  const [showCert, setShowCert] = useState(false);
+
+  const openCertHandler = () => {
+    setShowCert(true);
+  }
+
+  const closeCertHandler = () => {
+    setShowCert(false);
+  }
 
   function handleExpand(id) {
     setExpanded((prevId) => {
@@ -22,14 +24,31 @@ function Certificates() {
       }
       return id;
     })
+    setActiveCert((prevId) => {
+      if (prevId === id) {
+        return null;
+      }
+      return id;
+    })
   }
 
-  const certsContent = certificates.map(cert => (
+  const certsContent = CertificatesInfo.map(cert => (
     <CertificateItem
       key={cert.name}
       onExpand={() => handleExpand(cert.id)}
       isExpanded={expanded === cert.id}
-      name={cert.name} />
+      isActiveCert={activeCert === cert.id}
+      isVisibleCert={showCert}
+      name={cert.name}
+      date={cert.date}
+      link={cert.link}
+      provider={cert.provider}
+      certificate={cert.certificate}
+      details={cert.details}
+      onClose={closeCertHandler}
+      onOpen={openCertHandler}
+      activeCert={activeCert}
+    />
   ))
 
   return (
