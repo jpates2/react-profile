@@ -29,7 +29,7 @@ function CertificateItem(props) {
       </div>
       <AnimatePresence>
         {props.isExpanded && (
-          <motion.div initial={{height: 0, opacity: 0}} animate={{height: "220px", opacity: 1}} exit={{height: 0, opacity: 0}} >
+          <motion.div initial={{height: 0, opacity: 0}} animate={{height: "240px", opacity: 1}} exit={{height: 0, opacity: 0}} >
             <div className={classes["cert-item__info-container"]}>
               <div className={classes["cert-item__info"]}>Provider</div>
               <div><a href={props.link} target="_blank" rel="noreferrer" >{props.provider}</a></div>
