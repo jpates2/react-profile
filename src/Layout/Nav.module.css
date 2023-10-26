@@ -68,7 +68,8 @@
   height: 0.2rem;
   top: 0;
   left: 0;
-  background: white;
+  background: black;
+  border-radius: 8px;
   transform: rotate(0);
 }
 
