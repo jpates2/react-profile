@@ -37,6 +37,10 @@
   margin: 1rem auto 0 auto;
 }
 
+.carousel__item-icon:hover {
+  scale: 1.1;
+}
+
 @media (max-width: 800px) {
   .carousel__item-image-container {
     display: none;

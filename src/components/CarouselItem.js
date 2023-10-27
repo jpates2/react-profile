@@ -54,8 +54,8 @@ function CarouselItem(props) {
               <p>{props.languages}</p>
             </div>
             <div className={classes["carousel__item-icons"]}>
-              <div><a href={props.link} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLink} /></a></div>
-              <div><a href={props.github} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithubSquare} /></a></div>
+              <div><a href={props.link} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLink}  className={classes["carousel__item-icon"]}/></a></div>
+              <div><a href={props.github} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithubSquare}  className={classes["carousel__item-icon"]}/></a></div>
             </div>
           </div>
           <div className={classes["carousel__item-image-container"]}>
