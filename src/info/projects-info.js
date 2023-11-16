@@ -1,3 +1,9 @@
+import verbify1 from "../images/verbify1.png";
+import verbify2 from "../images/verbify2.png";
+import verbify3 from "../images/verbify3.png";
+import verbify4 from "../images/verbify4.png";
+import verbify5 from "../images/verbify5.png";
+
 import pitstop1 from '../images/pitstop1.png';
 import pitstop2 from '../images/pitstop2.png';
 import pitstop3 from '../images/pitstop3.png';
@@ -44,6 +50,25 @@ import watchlist4 from '../images/watchlist4.png';
 export const ProjectsInfo = [
   {
     id: "p1",
+    name: "Verbify",
+    description: [
+      "Work-in-progress interactive site that allows users to enhance their Spanish skills through reviewing verbs and then practising with flashcards.",
+      "Users will be able to create a profile where they can view past results and a personalised list of past errors to review.",
+      "Built using React and all of its fundamental features.",
+    ],
+    languages: "React | HTML | CSS",
+    link: "https://incredible-sfogliatella-364828.netlify.app/",
+    github: "https://github.com/jpates2/verbify",
+    images: [
+      verbify1,
+      verbify2,
+      verbify3,
+      verbify4,
+      verbify5,
+    ]
+  },
+  {
+    id: "p2",
     name: "Bros Pizza",
     description: [
       "My first React project: a landing and ordering page for a pizza restaurant.",
@@ -63,7 +88,7 @@ export const ProjectsInfo = [
     ]
   },
   {
-    id: "p2",
+    id: "p3",
     name: "Ron Swanson",
     description: [
       "Tailwind landing page design for personal trainer's business page.",
@@ -83,7 +108,7 @@ export const ProjectsInfo = [
     ]
   },
   {
-    id: "p3",
+    id: "p4",
     name: "Pit Stop",
     description: [
       "Landing page design for ficitonal London street food market with multiple vendors. Goal is to design and build out individual landing page for each vendor.",
@@ -102,7 +127,7 @@ export const ProjectsInfo = [
     ]
   },
   {
-    id: "p4",
+    id: "p5",
     name: "GameOn",
     description: [
       "Arcade style site with a variety of JavaScript powered games.",
@@ -118,7 +143,7 @@ export const ProjectsInfo = [
     ]
   },
   {
-    id: "p5",
+    id: "p6",
     name: "FanFind",
     description: [
       "Mobile first web app that helps sports fans find the right people and the right place to watch the games of their team.",
@@ -137,7 +162,7 @@ export const ProjectsInfo = [
     ]
   },
   {
-    id: "p6",
+    id: "p7",
     name: "ShArt",
     description: [
       "Marketplace bringing together those with artwork to rent and those looking to rent artwork for events, occasions, public spaces. Rails MVC structure with create / view / edit / delete functions.",
@@ -153,7 +178,7 @@ export const ProjectsInfo = [
     ]
   },
   {
-    id: "p7",
+    id: "p8",
     name: "Watchlist",
     description: [
       "Site for organising movies into lists based on genre. Users can browse lists, create a new list and add a movie to any list.",
