@@ -3,6 +3,8 @@ import javascript from "../images/certs/javascript.jpeg";
 import typescript from "../images/certs/typescript.jpeg";
 import tailwind from "../images/certs/tailwind.jpeg";
 import css from "../images/certs/css.jpeg";
+import react from "../images/certs/react.jpeg";
+import sql from "../images/certs/sql.jpeg";
 
 export const CertificatesInfo = [
   {
@@ -84,8 +86,9 @@ export const CertificatesInfo = [
     id: "c6",
     name: "react - the complete guide",
     provider: "Udemy",
-    date: "Pending...",
-    certificate: "",
+    date: "Nov 23",
+    certificate: react,
+    link: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
     details: [
       "Essentials: Components, JSX, props, state, rendering.",
       "State Management: Context API, Redux.",
@@ -93,6 +96,23 @@ export const CertificatesInfo = [
       "Hooks: useState, useEffect, useContext, useReducer, useRef, useMemo, useCallback, custom hooks.",
       "Async: fetch, promises, async/await, thunks.",
       "Animation: Framer Motion.",
+    ]
+  },
+  {
+    id: "c7",
+    name: "sql",
+    provider: "Udemy",
+    date: "Dec 23",
+    certificate: sql,
+    link: "https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/",
+    details: [
+      "Basics: Databases, tables, data types.",
+      "Querying: Select, where, order by, logical operators.",
+      "Modification: Insert, update, delete.",
+      "Aggregating: Joins, group by, subqueries.",
+      "Constraints: Primary key, foreign key, unique, not null.",
+      "Views & Modes: Having, rollup.",
+      "Window Functions: Over, partition, rank, lead, lag.",
     ]
   },
 ]
