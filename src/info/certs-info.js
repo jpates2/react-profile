@@ -115,4 +115,13 @@ export const CertificatesInfo = [
       "Window Functions: Over, partition, rank, lead, lag.",
     ]
   },
+  {
+    id: "c8",
+    name: "python",
+    provider: "Udemy",
+    date: "TBC",
+    certificate: "",
+    link: "https://www.udemy.com/course/the-modern-python3-bootcamp/",
+    details: []
+  },
 ]
