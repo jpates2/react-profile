@@ -151,7 +151,7 @@ export const ProjectsInfo = [
       "Group project completed as part of Le Wagon bootcamp."
     ],
     languages: "Ruby on Rails | JavaScript | Stimulus | HTML | CSS | SQL",
-    link: "https://www.fan-find.com/",
+    link: "https://fanfind-460dd89f6f77.herokuapp.com/",
     github: "https://github.com/WillMolas/FanFind/",
     images: [
       fanfind1,
