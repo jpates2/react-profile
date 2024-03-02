@@ -43,10 +43,6 @@ import shart1 from '../images/shart1.png';
 import shart2 from '../images/shart2.png';
 import shart3 from '../images/shart3.png';
 
-import watchlist1 from '../images/watchlist1.png';
-import watchlist2 from '../images/watchlist2.png';
-import watchlist4 from '../images/watchlist4.png';
-
 export const ProjectsInfo = [
   {
     id: "p1",
@@ -175,23 +171,6 @@ export const ProjectsInfo = [
       shart1,
       shart2,
       shart3,
-    ]
-  },
-  {
-    id: "p8",
-    name: "Watchlist",
-    description: [
-      "Site for organising movies into lists based on genre. Users can browse lists, create a new list and add a movie to any list.",
-      "Rails MVC structure with create / view / edit / delete functions.",
-      "Individual project at Le Wagon."
-    ],
-    languages: "Ruby on Rails | HTML | CSS ",
-    link: "https://watchlist-bcn1046.herokuapp.com/",
-    github: "https://github.com/jpates2/rails-watch-list",
-    images: [
-      watchlist1,
-      watchlist2,
-      watchlist4,
     ]
   }
 ]

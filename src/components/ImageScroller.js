@@ -27,7 +27,7 @@ function ImageScroller(props) {
 
   const images = (
     props.images.map(function(img) {
-      if (props.name !== "Watchlist" && props.name !== "GameOn" && props.name !== "ShArt") {
+      if (props.name !== "GameOn" && props.name !== "ShArt") {
         return <motion.img
           key={img}
           src={img}
