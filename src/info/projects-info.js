@@ -43,6 +43,11 @@ import shart1 from '../images/shart1.png';
 import shart2 from '../images/shart2.png';
 import shart3 from '../images/shart3.png';
 
+import fac1 from '../images/fac1.png';
+import fac2 from '../images/fac2.png';
+import fac3 from '../images/fac3.png';
+import fac4 from '../images/fac4.png';
+
 export const ProjectsInfo = [
   {
     id: "p1",
@@ -65,6 +70,23 @@ export const ProjectsInfo = [
   },
   {
     id: "p2",
+    name: "FAC Profile",
+    description: [
+      "An alternative personal profile page.",
+      "Built as part of successful application to Founders and Coders Software Foundations course."
+    ],
+    languages: "JavaScript | HTML | CSS",
+    link: "https://jpates2.github.io/fac-profile/",
+    github: "https://github.com/jpates2",
+    images: [
+      fac1,
+      fac2,
+      fac3,
+      fac4,
+    ]
+  },
+  {
+    id: "p3",
     name: "Bros Pizza",
     description: [
       "My first React project: a landing and ordering page for a pizza restaurant.",
@@ -84,7 +106,7 @@ export const ProjectsInfo = [
     ]
   },
   {
-    id: "p3",
+    id: "p4",
     name: "Ron Swanson",
     description: [
       "Tailwind landing page design for personal trainer's business page.",
@@ -104,7 +126,7 @@ export const ProjectsInfo = [
     ]
   },
   {
-    id: "p4",
+    id: "p5",
     name: "Pit Stop",
     description: [
       "Landing page design for ficitonal London street food market with multiple vendors. Goal is to design and build out individual landing page for each vendor.",
@@ -123,7 +145,7 @@ export const ProjectsInfo = [
     ]
   },
   {
-    id: "p5",
+    id: "p6",
     name: "GameOn",
     description: [
       "Arcade style site with a variety of JavaScript powered games.",
@@ -139,7 +161,7 @@ export const ProjectsInfo = [
     ]
   },
   {
-    id: "p6",
+    id: "p7",
     name: "FanFind",
     description: [
       "Mobile first web app that helps sports fans find the right people and the right place to watch the games of their team.",
@@ -158,7 +180,7 @@ export const ProjectsInfo = [
     ]
   },
   {
-    id: "p7",
+    id: "p8",
     name: "ShArt",
     description: [
       "Marketplace bringing together those with artwork to rent and those looking to rent artwork for events, occasions, public spaces. Rails MVC structure with create / view / edit / delete functions.",
